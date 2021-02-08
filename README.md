@@ -5,7 +5,7 @@ This repository is dedicated to an ongoing project on making an Automated Covid1
 ## Aim
 To autmate the temperature based screening task for COVID'19 screening.
 
-##Currently added working features:
+## Currently added working features:
 - Detect and alert whenever a person is in between the range of 10cm to 20cm in front of the machine.
 - Measures his/her temperature
 - It should measure temperature only when someone is detected not all the time.
