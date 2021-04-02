@@ -1,0 +1,586 @@
+<html>
+<head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+span.cls_003{font-family:"Cambria Italic",serif;font-size:26.1px;color:rgb(22,54,93);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_003{font-family:"Cambria Italic",serif;font-size:26.1px;color:rgb(22,54,93);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_042{font-family:Times,serif;font-size:16.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: underline}
+div.cls_042{font-family:Times,serif;font-size:16.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_005{font-family:Times,serif;font-size:16.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_005{font-family:Times,serif;font-size:16.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_004{font-family:Times,serif;font-size:16.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_004{font-family:Times,serif;font-size:16.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_043{font-family:Times,serif;font-size:16.0px;color:rgb(0,0,255);font-weight:normal;font-style:normal;text-decoration: underline}
+div.cls_043{font-family:Times,serif;font-size:16.0px;color:rgb(0,0,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_002{font-family:"Calibri",serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_002{font-family:"Calibri",serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_007{font-family:"Cambria Italic",serif;font-size:22.0px;color:rgb(22,54,93);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_007{font-family:"Cambria Italic",serif;font-size:22.0px;color:rgb(22,54,93);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_008{font-family:Times,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_008{font-family:Times,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_009{font-family:Times,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_009{font-family:Times,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_010{font-family:"Cambria Italic",serif;font-size:24.1px;color:rgb(22,54,93);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_010{font-family:"Cambria Italic",serif;font-size:24.1px;color:rgb(22,54,93);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_011{font-family:"Cambria Bold",serif;font-size:16.0px;color:rgb(54,95,144);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_011{font-family:"Cambria Bold",serif;font-size:16.0px;color:rgb(54,95,144);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_013{font-family:Arial,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_013{font-family:Arial,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_014{font-family:Arial,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_014{font-family:Arial,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_016{font-family:"Cambria Bold",serif;font-size:14.1px;color:rgb(54,95,144);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_016{font-family:"Cambria Bold",serif;font-size:14.1px;color:rgb(54,95,144);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_017{font-family:Times,serif;font-size:12.5px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_017{font-family:Times,serif;font-size:12.5px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_018{font-family:Times,serif;font-size:12.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_018{font-family:Times,serif;font-size:12.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_020{font-family:Times,serif;font-size:14.1px;color:rgb(79,128,188);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_020{font-family:Times,serif;font-size:14.1px;color:rgb(79,128,188);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_022{font-family:Arial,serif;font-size:12.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_022{font-family:Arial,serif;font-size:12.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_023{font-family:Courier New,serif;font-size:12.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_023{font-family:Courier New,serif;font-size:12.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_024{font-family:Times,serif;font-size:12.5px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_024{font-family:Times,serif;font-size:12.5px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_025{font-family:Times,serif;font-size:12.5px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_025{font-family:Times,serif;font-size:12.5px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_026{font-family:Times,serif;font-size:12.5px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
+div.cls_026{font-family:Times,serif;font-size:12.5px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
+span.cls_044{font-family:Times,serif;font-size:12.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: underline}
+div.cls_044{font-family:Times,serif;font-size:12.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_021{font-family:Arial,serif;font-size:12.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_021{font-family:Arial,serif;font-size:12.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_045{font-family:Times,serif;font-size:12.5px;color:rgb(0,0,255);font-weight:normal;font-style:normal;text-decoration: underline}
+div.cls_045{font-family:Times,serif;font-size:12.5px;color:rgb(0,0,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_046{font-family:Times,serif;font-size:14.1px;color:rgb(0,0,255);font-weight:bold;font-style:normal;text-decoration: underline}
+div.cls_046{font-family:Times,serif;font-size:14.1px;color:rgb(0,0,255);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_030{font-family:Courier New,serif;font-size:12.1px;color:rgb(0,31,95);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_030{font-family:Courier New,serif;font-size:12.1px;color:rgb(0,31,95);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_031{font-family:Courier New,serif;font-size:12.1px;color:rgb(192,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_031{font-family:Courier New,serif;font-size:12.1px;color:rgb(192,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_032{font-family:Arial,serif;font-size:11.6px;color:rgb(192,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_032{font-family:Arial,serif;font-size:11.6px;color:rgb(192,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_033{font-family:Arial,serif;font-size:11.6px;color:rgb(192,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_033{font-family:Arial,serif;font-size:11.6px;color:rgb(192,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_035{font-family:Arial,serif;font-size:13.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_035{font-family:Arial,serif;font-size:13.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_036{font-family:Arial,serif;font-size:13.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_036{font-family:Arial,serif;font-size:13.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_015{font-family:Times,serif;font-size:13.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_015{font-family:Times,serif;font-size:13.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_047{font-family:"Calibri",serif;font-size:11.1px;color:rgb(0,0,255);font-weight:normal;font-style:normal;text-decoration: underline}
+div.cls_047{font-family:"Calibri",serif;font-size:11.1px;color:rgb(0,0,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_039{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_039{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_040{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_040{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_041{font-family:Times,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_041{font-family:Times,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+-->
+</style>
+<script type="text/javascript" src="e10c4938-936a-11eb-8b25-0cc47a792c0a_id_e10c4938-936a-11eb-8b25-0cc47a792c0a_files/wz_jsgraphics.js"></script>
+</head>
+<body>
+<div style="position:absolute;left:50%;margin-left:-306px;top:0px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e10c4938-936a-11eb-8b25-0cc47a792c0a_id_e10c4938-936a-11eb-8b25-0cc47a792c0a_files/background01.jpg" width=612 height=792></div>
+<div style="position:absolute;left:72.38px;top:70.70px" class="cls_003"><span class="cls_003">COVID-19 Automated Screening Machine</span></div>
+<div style="position:absolute;left:54.00px;top:213.38px" class="cls_042"><span class="cls_042">Project done by:</span></div>
+<div style="position:absolute;left:54.00px;top:244.25px" class="cls_005"><span class="cls_005">Name: </span><span class="cls_004">Chirantan Ganguly</span></div>
+<div style="position:absolute;left:54.00px;top:275.45px" class="cls_005"><span class="cls_005">Contact Number:</span><span class="cls_004"> +91 9330192247</span></div>
+<div style="position:absolute;left:54.00px;top:306.53px" class="cls_005"><span class="cls_005">Email Id:</span><span class="cls_004"> </span><A HREF="mailto:chirantanganguly01@gmail.com">chirantanganguly01@gmail.com</A> </span></div>
+<div style="position:absolute;left:54.00px;top:337.73px" class="cls_005"><span class="cls_005">University:</span><span class="cls_004"> University of Calcutta</span></div>
+<div style="position:absolute;left:54.00px;top:368.93px" class="cls_005"><span class="cls_005">Course:</span><span class="cls_004"> Electronics and Communication Engineering</span></div>
+<div style="position:absolute;left:54.00px;top:400.01px" class="cls_005"><span class="cls_005">Semester:</span><span class="cls_004"> 3</span></div>
+<div style="position:absolute;left:54.00px;top:431.23px" class="cls_005"><span class="cls_005">Address:</span><span class="cls_004"> 41/4, Brindaban Mullick Lane, Kadamtala, Howrah - 711101.</span></div>
+<div style="position:absolute;left:294.31px;top:728.50px" class="cls_002"><span class="cls_002">1</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:802px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e10c4938-936a-11eb-8b25-0cc47a792c0a_id_e10c4938-936a-11eb-8b25-0cc47a792c0a_files/background02.jpg" width=612 height=792></div>
+<div style="position:absolute;left:256.13px;top:70.94px" class="cls_007"><span class="cls_007">Contents</span></div>
+<div style="position:absolute;left:63.02px;top:192.14px" class="cls_008"><span class="cls_008">Sl. No.</span></div>
+<div style="position:absolute;left:135.86px;top:192.14px" class="cls_008"><span class="cls_008">Topic</span></div>
+<div style="position:absolute;left:437.50px;top:192.14px" class="cls_008"><span class="cls_008">Page</span></div>
+<div style="position:absolute;left:63.02px;top:208.46px" class="cls_009"><span class="cls_009">1.</span></div>
+<div style="position:absolute;left:135.86px;top:208.46px" class="cls_009"><span class="cls_009">Problem Statement</span></div>
+<div style="position:absolute;left:437.50px;top:208.46px" class="cls_009"><span class="cls_009">3</span></div>
+<div style="position:absolute;left:63.02px;top:225.02px" class="cls_009"><span class="cls_009">2.</span></div>
+<div style="position:absolute;left:135.86px;top:225.02px" class="cls_009"><span class="cls_009">Covid19 Screening Machine</span></div>
+<div style="position:absolute;left:437.50px;top:225.02px" class="cls_009"><span class="cls_009">4-14</span></div>
+<div style="position:absolute;left:85.34px;top:241.73px" class="cls_009"><span class="cls_009">2.1</span></div>
+<div style="position:absolute;left:257.45px;top:241.73px" class="cls_009"><span class="cls_009">Abstract</span></div>
+<div style="position:absolute;left:480.82px;top:241.73px" class="cls_009"><span class="cls_009">4</span></div>
+<div style="position:absolute;left:85.34px;top:258.29px" class="cls_009"><span class="cls_009">2.2</span></div>
+<div style="position:absolute;left:246.53px;top:258.29px" class="cls_009"><span class="cls_009">Introduction</span></div>
+<div style="position:absolute;left:480.82px;top:258.29px" class="cls_009"><span class="cls_009">4</span></div>
+<div style="position:absolute;left:85.34px;top:274.85px" class="cls_009"><span class="cls_009">2.3</span></div>
+<div style="position:absolute;left:198.17px;top:274.85px" class="cls_009"><span class="cls_009">List of Components Required</span></div>
+<div style="position:absolute;left:480.82px;top:274.85px" class="cls_009"><span class="cls_009">5</span></div>
+<div style="position:absolute;left:85.34px;top:291.53px" class="cls_009"><span class="cls_009">2.4</span></div>
+<div style="position:absolute;left:242.45px;top:291.53px" class="cls_009"><span class="cls_009">Circuit Image</span></div>
+<div style="position:absolute;left:474.94px;top:291.53px" class="cls_009"><span class="cls_009">6-7</span></div>
+<div style="position:absolute;left:85.34px;top:308.09px" class="cls_009"><span class="cls_009">2.5</span></div>
+<div style="position:absolute;left:216.77px;top:308.09px" class="cls_009"><span class="cls_009">Working of the Device</span></div>
+<div style="position:absolute;left:474.94px;top:308.09px" class="cls_009"><span class="cls_009">8-9</span></div>
+<div style="position:absolute;left:85.34px;top:324.65px" class="cls_009"><span class="cls_009">2.6</span></div>
+<div style="position:absolute;left:245.21px;top:324.65px" class="cls_009"><span class="cls_009">Source Code</span></div>
+<div style="position:absolute;left:467.98px;top:324.65px" class="cls_009"><span class="cls_009">10-13</span></div>
+<div style="position:absolute;left:85.34px;top:341.21px" class="cls_009"><span class="cls_009">2.7</span></div>
+<div style="position:absolute;left:183.17px;top:341.21px" class="cls_009"><span class="cls_009">Innovative points about the Project</span></div>
+<div style="position:absolute;left:477.22px;top:341.21px" class="cls_009"><span class="cls_009">14</span></div>
+<div style="position:absolute;left:85.34px;top:357.89px" class="cls_009"><span class="cls_009">2.8</span></div>
+<div style="position:absolute;left:265.25px;top:357.89px" class="cls_009"><span class="cls_009">Links</span></div>
+<div style="position:absolute;left:477.22px;top:357.89px" class="cls_009"><span class="cls_009">14</span></div>
+<div style="position:absolute;left:85.34px;top:374.45px" class="cls_009"><span class="cls_009">2.9</span></div>
+<div style="position:absolute;left:217.01px;top:374.45px" class="cls_009"><span class="cls_009">Scope of Improvement</span></div>
+<div style="position:absolute;left:477.22px;top:374.45px" class="cls_009"><span class="cls_009">14</span></div>
+<div style="position:absolute;left:294.31px;top:728.50px" class="cls_002"><span class="cls_002">2</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:1604px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e10c4938-936a-11eb-8b25-0cc47a792c0a_id_e10c4938-936a-11eb-8b25-0cc47a792c0a_files/background03.jpg" width=612 height=792></div>
+<div style="position:absolute;left:211.01px;top:70.94px" class="cls_010"><span class="cls_010">Project Objective</span></div>
+<div style="position:absolute;left:54.00px;top:128.30px" class="cls_011"><span class="cls_011">Aim:</span></div>
+<div style="position:absolute;left:90.02px;top:149.42px" class="cls_009"><span class="cls_009">To automate the temperature based screening task for COVID'19 screening.</span></div>
+<div style="position:absolute;left:54.00px;top:192.50px" class="cls_011"><span class="cls_011">Problem statement for the project:</span></div>
+<div style="position:absolute;left:90.02px;top:213.50px" class="cls_009"><span class="cls_009">To make a prototype simulation model (in TinkerCAD) of Temperature based</span></div>
+<div style="position:absolute;left:54.00px;top:231.98px" class="cls_009"><span class="cls_009">screening machine for COVID’19. This machine will be useful at entry gates where</span></div>
+<div style="position:absolute;left:54.00px;top:250.61px" class="cls_009"><span class="cls_009">manual screening is done by persons using digital thermometers. We have to automate</span></div>
+<div style="position:absolute;left:54.00px;top:269.09px" class="cls_009"><span class="cls_009">this particular task in a more effective way.</span></div>
+<div style="position:absolute;left:54.00px;top:312.05px" class="cls_011"><span class="cls_011">Features:</span></div>
+<div style="position:absolute;left:108.02px;top:334.13px" class="cls_013"><span class="cls_013"></span><span class="cls_014"> </span><span class="cls_009"> Detect and alert whenever a person is in between the range of 10cm to</span></div>
+<div style="position:absolute;left:126.02px;top:352.61px" class="cls_009"><span class="cls_009">20cm in front of the machine.</span></div>
+<div style="position:absolute;left:108.02px;top:372.17px" class="cls_013"><span class="cls_013"></span><span class="cls_014"> </span><span class="cls_009"> Measures his/her temperature</span></div>
+<div style="position:absolute;left:108.02px;top:391.61px" class="cls_013"><span class="cls_013"></span><span class="cls_014"> </span><span class="cls_009"> It should measure temperature only when someone is detected not all the</span></div>
+<div style="position:absolute;left:126.02px;top:410.23px" class="cls_009"><span class="cls_009">time.</span></div>
+<div style="position:absolute;left:108.02px;top:429.67px" class="cls_013"><span class="cls_013"></span><span class="cls_014"> </span><span class="cls_009"> If the temperature is normal then a buzzer & RED LED should be turned</span></div>
+<div style="position:absolute;left:126.02px;top:448.27px" class="cls_009"><span class="cls_009">on, to alert Gatekeeper.</span></div>
+<div style="position:absolute;left:108.02px;top:467.71px" class="cls_013"><span class="cls_013"></span><span class="cls_014"> </span><span class="cls_009"> If the temperature is normal, then it should turn on the GREEN LED.</span></div>
+<div style="position:absolute;left:108.02px;top:487.27px" class="cls_013"><span class="cls_013"></span><span class="cls_014"> </span><span class="cls_009"> It should spray sanitizer whenever hands are placed below a knob/a fixed</span></div>
+<div style="position:absolute;left:126.02px;top:505.87px" class="cls_009"><span class="cls_009">point</span></div>
+<div style="position:absolute;left:108.02px;top:525.31px" class="cls_013"><span class="cls_013"></span><span class="cls_014"> </span><span class="cls_009"> Display all relevant things over the LCD & Serial Monitor</span></div>
+<div style="position:absolute;left:126.02px;top:543.91px" class="cls_009"><span class="cls_009">simultaneously.</span></div>
+<div style="position:absolute;left:108.02px;top:563.35px" class="cls_013"><span class="cls_013"></span><span class="cls_014"> </span><span class="cls_009">  Count of the number of person currently inside should be maintained and</span></div>
+<div style="position:absolute;left:126.02px;top:581.86px" class="cls_009"><span class="cls_009">displayed properly.</span></div>
+<div style="position:absolute;left:294.31px;top:728.50px" class="cls_002"><span class="cls_002">3</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:2406px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e10c4938-936a-11eb-8b25-0cc47a792c0a_id_e10c4938-936a-11eb-8b25-0cc47a792c0a_files/background04.jpg" width=612 height=792></div>
+<div style="position:absolute;left:137.66px;top:70.70px" class="cls_003"><span class="cls_003">COVID’19 Screening Machine</span></div>
+<div style="position:absolute;left:54.00px;top:130.70px" class="cls_016"><span class="cls_016">2.1 Abstract</span></div>
+<div style="position:absolute;left:54.00px;top:149.06px" class="cls_009"><span class="cls_009">Through this project, we want to automate the task of sanitization and thermal</span></div>
+<div style="position:absolute;left:54.00px;top:167.54px" class="cls_009"><span class="cls_009">screening done before entering a public place (due to COVID’19), thereby reducing</span></div>
+<div style="position:absolute;left:54.00px;top:186.14px" class="cls_009"><span class="cls_009">human-to-human interaction and thus helping to reduce the chance of the spread of the</span></div>
+<div style="position:absolute;left:54.00px;top:204.62px" class="cls_009"><span class="cls_009">infection. We will be using an Arduino Uno Microcontroller (ATmega 328P), and</span></div>
+<div style="position:absolute;left:54.00px;top:223.10px" class="cls_009"><span class="cls_009">some other sensors and actuators to achieve this objective of ours. All the components</span></div>
+<div style="position:absolute;left:54.00px;top:241.61px" class="cls_009"><span class="cls_009">used are inexpensive, making this device very affordable, and easily deployable at all</span></div>
+<div style="position:absolute;left:54.00px;top:260.21px" class="cls_009"><span class="cls_009">scale from small businesses to larger public places such as malls/airports. Through</span></div>
+<div style="position:absolute;left:54.00px;top:278.69px" class="cls_009"><span class="cls_009">this report we provide a prototype (simulation model - using TinkerCAD) of this</span></div>
+<div style="position:absolute;left:54.00px;top:297.17px" class="cls_009"><span class="cls_009">device.</span></div>
+<div style="position:absolute;left:54.00px;top:340.13px" class="cls_016"><span class="cls_016">2.2 Introduction</span></div>
+<div style="position:absolute;left:54.00px;top:358.61px" class="cls_009"><span class="cls_009">COVID’19 has caused, and is causing a lot of havoc all around the globe. Its highly</span></div>
+<div style="position:absolute;left:54.00px;top:377.09px" class="cls_009"><span class="cls_009">communicable nature has exposed everyone to the risk of getting infected. We already</span></div>
+<div style="position:absolute;left:54.00px;top:395.57px" class="cls_009"><span class="cls_009">have lost a lot of precious lives to this disease, and we should not expose any more</span></div>
+<div style="position:absolute;left:54.00px;top:414.19px" class="cls_009"><span class="cls_009">human beings to this infection (or reduce their risk of infection as much as possible).</span></div>
+<div style="position:absolute;left:54.00px;top:432.67px" class="cls_009"><span class="cls_009">Thermal scanning and basic sanitization has now become a norm before entering any</span></div>
+<div style="position:absolute;left:54.00px;top:451.15px" class="cls_009"><span class="cls_009">public place (restaurant/malls/airports/schools), and this task is done mostly by</span></div>
+<div style="position:absolute;left:54.00px;top:469.63px" class="cls_009"><span class="cls_009">humans, where they provide the approaching person with some amount of sanitizer</span></div>
+<div style="position:absolute;left:54.00px;top:488.23px" class="cls_009"><span class="cls_009">and check their temperature before allowing entry. This exposes them to a high chance</span></div>
+<div style="position:absolute;left:54.00px;top:506.71px" class="cls_009"><span class="cls_009">of infection, as they have to deal with a lot of people constantly.</span></div>
+<div style="position:absolute;left:54.00px;top:535.27px" class="cls_009"><span class="cls_009">It is thus of interest to us to automate this task and to prevent humans from risking</span></div>
+<div style="position:absolute;left:54.00px;top:553.75px" class="cls_009"><span class="cls_009">their lives while doing these things.</span></div>
+<div style="position:absolute;left:54.00px;top:582.34px" class="cls_009"><span class="cls_009">Here we provide the prototype of the device which could be easily manufactured with</span></div>
+<div style="position:absolute;left:54.00px;top:600.82px" class="cls_009"><span class="cls_009">simple and inexpensive components, would be easily transportable and a reliable</span></div>
+<div style="position:absolute;left:54.00px;top:619.30px" class="cls_009"><span class="cls_009">device at all scale. The device is also easily personalisable according to the need of the</span></div>
+<div style="position:absolute;left:54.00px;top:637.78px" class="cls_009"><span class="cls_009">customer.</span></div>
+<div style="position:absolute;left:294.31px;top:728.50px" class="cls_002"><span class="cls_002">4</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:3208px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e10c4938-936a-11eb-8b25-0cc47a792c0a_id_e10c4938-936a-11eb-8b25-0cc47a792c0a_files/background05.jpg" width=612 height=792></div>
+<div style="position:absolute;left:54.00px;top:71.06px" class="cls_016"><span class="cls_016">2.3 List of Components Required:</span></div>
+<div style="position:absolute;left:41.40px;top:115.94px" class="cls_017"><span class="cls_017">Name</span></div>
+<div style="position:absolute;left:235.01px;top:115.94px" class="cls_017"><span class="cls_017">Quantity</span></div>
+<div style="position:absolute;left:347.47px;top:115.94px" class="cls_017"><span class="cls_017">Component</span></div>
+<div style="position:absolute;left:41.40px;top:142.46px" class="cls_018"><span class="cls_018">UAUno1</span></div>
+<div style="position:absolute;left:235.01px;top:142.46px" class="cls_018"><span class="cls_018">1</span></div>
+<div style="position:absolute;left:347.47px;top:142.46px" class="cls_018"><span class="cls_018">Arduino Uno R3</span></div>
+<div style="position:absolute;left:41.40px;top:171.98px" class="cls_018"><span class="cls_018">ULCD</span></div>
+<div style="position:absolute;left:235.01px;top:171.98px" class="cls_018"><span class="cls_018">1</span></div>
+<div style="position:absolute;left:347.47px;top:171.98px" class="cls_018"><span class="cls_018">LCD 16x2</span></div>
+<div style="position:absolute;left:41.40px;top:201.38px" class="cls_018"><span class="cls_018">RPot1</span></div>
+<div style="position:absolute;left:235.01px;top:201.38px" class="cls_018"><span class="cls_018">1</span></div>
+<div style="position:absolute;left:347.47px;top:201.38px" class="cls_018"><span class="cls_018">250k Ω Potentiometer</span></div>
+<div style="position:absolute;left:41.40px;top:230.90px" class="cls_018"><span class="cls_018">R1</span></div>
+<div style="position:absolute;left:235.01px;top:230.90px" class="cls_018"><span class="cls_018">1</span></div>
+<div style="position:absolute;left:347.47px;top:230.90px" class="cls_018"><span class="cls_018">220Ω Resistor</span></div>
+<div style="position:absolute;left:41.40px;top:260.45px" class="cls_018"><span class="cls_018">R2</span></div>
+<div style="position:absolute;left:235.01px;top:260.45px" class="cls_018"><span class="cls_018">1</span></div>
+<div style="position:absolute;left:347.47px;top:260.45px" class="cls_018"><span class="cls_018">1k Ω Resistor</span></div>
+<div style="position:absolute;left:41.40px;top:289.97px" class="cls_018"><span class="cls_018">PINGSanitiseDistanceSensor</span></div>
+<div style="position:absolute;left:235.01px;top:289.97px" class="cls_018"><span class="cls_018">2</span></div>
+<div style="position:absolute;left:347.47px;top:289.97px" class="cls_018"><span class="cls_018">Ultrasonic Distance Sensor  (3 pin)</span></div>
+<div style="position:absolute;left:41.40px;top:304.37px" class="cls_018"><span class="cls_018">PINGEntryDistanceSensor</span></div>
+<div style="position:absolute;left:41.40px;top:333.77px" class="cls_018"><span class="cls_018">DISTExitDistanceSensor</span></div>
+<div style="position:absolute;left:235.01px;top:333.77px" class="cls_018"><span class="cls_018">1</span></div>
+<div style="position:absolute;left:347.47px;top:333.77px" class="cls_018"><span class="cls_018">Ultrasonic Distance Sensor  (4 pin)</span></div>
+<div style="position:absolute;left:41.40px;top:363.29px" class="cls_018"><span class="cls_018">PEIZOBuzz</span></div>
+<div style="position:absolute;left:235.01px;top:363.29px" class="cls_018"><span class="cls_018">1</span></div>
+<div style="position:absolute;left:347.47px;top:363.29px" class="cls_018"><span class="cls_018">Piezo</span></div>
+<div style="position:absolute;left:41.40px;top:392.81px" class="cls_018"><span class="cls_018">UTempSensor</span></div>
+<div style="position:absolute;left:235.01px;top:392.81px" class="cls_018"><span class="cls_018">1</span></div>
+<div style="position:absolute;left:347.47px;top:392.81px" class="cls_018"><span class="cls_018">Temperature Sensor [TMP36]</span></div>
+<div style="position:absolute;left:41.40px;top:422.35px" class="cls_018"><span class="cls_018">DRLED</span></div>
+<div style="position:absolute;left:235.01px;top:422.35px" class="cls_018"><span class="cls_018">1</span></div>
+<div style="position:absolute;left:347.47px;top:422.35px" class="cls_018"><span class="cls_018">Red LED</span></div>
+<div style="position:absolute;left:41.40px;top:451.87px" class="cls_018"><span class="cls_018">DGLED</span></div>
+<div style="position:absolute;left:235.01px;top:451.87px" class="cls_018"><span class="cls_018">1</span></div>
+<div style="position:absolute;left:347.47px;top:451.87px" class="cls_018"><span class="cls_018">Green LED</span></div>
+<div style="position:absolute;left:41.40px;top:481.39px" class="cls_018"><span class="cls_018">SERVOSanitationServo</span></div>
+<div style="position:absolute;left:235.01px;top:481.39px" class="cls_018"><span class="cls_018">1</span></div>
+<div style="position:absolute;left:347.47px;top:481.39px" class="cls_018"><span class="cls_018">Positional Micro Servo</span></div>
+<div style="position:absolute;left:41.40px;top:510.79px" class="cls_018"><span class="cls_018">EntryUnit</span></div>
+<div style="position:absolute;left:235.01px;top:510.79px" class="cls_018"><span class="cls_018">2</span></div>
+<div style="position:absolute;left:347.47px;top:510.79px" class="cls_018"><span class="cls_018">Breadboard Small</span></div>
+<div style="position:absolute;left:41.40px;top:525.19px" class="cls_018"><span class="cls_018">DisplayUnit</span></div>
+<div style="position:absolute;left:41.40px;top:554.71px" class="cls_018"><span class="cls_018">SanitationUnit</span></div>
+<div style="position:absolute;left:235.01px;top:554.71px" class="cls_018"><span class="cls_018">2</span></div>
+<div style="position:absolute;left:347.47px;top:554.71px" class="cls_018"><span class="cls_018">Breadboard Mini</span></div>
+<div style="position:absolute;left:41.40px;top:569.11px" class="cls_018"><span class="cls_018">ExitUnit</span></div>
+<div style="position:absolute;left:41.40px;top:598.66px" class="cls_018"><span class="cls_018">Wire</span></div>
+<div style="position:absolute;left:347.47px;top:598.66px" class="cls_018"><span class="cls_018">Connecting wire</span></div>
+<div style="position:absolute;left:294.31px;top:728.50px" class="cls_002"><span class="cls_002">5</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:4010px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e10c4938-936a-11eb-8b25-0cc47a792c0a_id_e10c4938-936a-11eb-8b25-0cc47a792c0a_files/background06.jpg" width=612 height=792></div>
+<div style="position:absolute;left:54.00px;top:71.06px" class="cls_016"><span class="cls_016">2.4 Circuit Image:</span></div>
+<div style="position:absolute;left:207.41px;top:384.05px" class="cls_020"><span class="cls_020">Figure 1: Image of the Circuit</span></div>
+<div style="position:absolute;left:148.82px;top:665.74px" class="cls_020"><span class="cls_020">Figure 2: Image of the Circuit with Units Labeled</span></div>
+<div style="position:absolute;left:294.31px;top:728.50px" class="cls_002"><span class="cls_002">6</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:4812px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e10c4938-936a-11eb-8b25-0cc47a792c0a_id_e10c4938-936a-11eb-8b25-0cc47a792c0a_files/background07.jpg" width=612 height=792></div>
+<div style="position:absolute;left:191.21px;top:379.73px" class="cls_020"><span class="cls_020">Figure 3: Circuit Elements Labeled</span></div>
+<div style="position:absolute;left:41.40px;top:405.77px" class="cls_018"><span class="cls_018">(1)   Piezo Buzzer</span></div>
+<div style="position:absolute;left:306.91px;top:405.77px" class="cls_018"><span class="cls_018">(10) Ultrasonic Distance Sensor (3 pin) - Sanitiser</span></div>
+<div style="position:absolute;left:306.91px;top:420.07px" class="cls_018"><span class="cls_018">End</span></div>
+<div style="position:absolute;left:41.40px;top:448.87px" class="cls_018"><span class="cls_018">(2)   RED LED</span></div>
+<div style="position:absolute;left:306.91px;top:448.87px" class="cls_018"><span class="cls_018">(11) Breadboard Mini - Sanitation Unit</span></div>
+<div style="position:absolute;left:41.40px;top:477.55px" class="cls_018"><span class="cls_018">(3)   GREEN LED</span></div>
+<div style="position:absolute;left:306.91px;top:477.55px" class="cls_018"><span class="cls_018">(12) Positional Servo Motor (Sanitiser Dispenser)</span></div>
+<div style="position:absolute;left:41.40px;top:506.35px" class="cls_018"><span class="cls_018">(4)   Resistance (1k Ω)</span></div>
+<div style="position:absolute;left:306.91px;top:506.35px" class="cls_018"><span class="cls_018">(13) Temperature Sensor [TMP36]</span></div>
+<div style="position:absolute;left:41.40px;top:535.15px" class="cls_018"><span class="cls_018">(5)   Arduino Uno R3</span></div>
+<div style="position:absolute;left:306.91px;top:535.15px" class="cls_018"><span class="cls_018">(14) Ultrasonic Distance Sensor (3 pin) - Entry</span></div>
+<div style="position:absolute;left:306.91px;top:549.43px" class="cls_018"><span class="cls_018">End</span></div>
+<div style="position:absolute;left:41.40px;top:578.26px" class="cls_018"><span class="cls_018">(6)   Ultrasonic Distance Sensor (4 pin) - Exit End</span></div>
+<div style="position:absolute;left:306.91px;top:578.26px" class="cls_018"><span class="cls_018">(15)Breadboard Small - Entry Unit</span></div>
+<div style="position:absolute;left:41.40px;top:606.94px" class="cls_018"><span class="cls_018">(7)   Breadboard Mini - Exit Unit</span></div>
+<div style="position:absolute;left:306.91px;top:606.94px" class="cls_018"><span class="cls_018">(16) Resistance (220Ω)</span></div>
+<div style="position:absolute;left:41.40px;top:635.74px" class="cls_018"><span class="cls_018">(8)   Potentiometer</span></div>
+<div style="position:absolute;left:306.91px;top:635.74px" class="cls_018"><span class="cls_018">(17) LCD (16x2)</span></div>
+<div style="position:absolute;left:41.40px;top:664.54px" class="cls_018"><span class="cls_018">(9)   Breadboard Small - Display Unit</span></div>
+<div style="position:absolute;left:294.31px;top:728.50px" class="cls_002"><span class="cls_002">7</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:5614px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e10c4938-936a-11eb-8b25-0cc47a792c0a_id_e10c4938-936a-11eb-8b25-0cc47a792c0a_files/background08.jpg" width=612 height=792></div>
+<div style="position:absolute;left:54.00px;top:71.06px" class="cls_016"><span class="cls_016">2.5 Working of the Device:</span></div>
+<div style="position:absolute;left:54.00px;top:89.66px" class="cls_018"><span class="cls_018">The step by step functioning of the device is explained in this section, this will thus justify the</span></div>
+<div style="position:absolute;left:54.00px;top:106.34px" class="cls_018"><span class="cls_018">choice of the sensors/actuators made to help build this device.</span></div>
+<div style="position:absolute;left:58.58px;top:133.70px" class="cls_022"><span class="cls_022"></span></div>
+<div style="position:absolute;left:76.58px;top:133.70px" class="cls_018"><span class="cls_018">The device would ideally be installed near the entrance of some</span></div>
+<div style="position:absolute;left:76.58px;top:150.14px" class="cls_018"><span class="cls_018">shop/restaurant/mall/school/airport. The first sensor which would be of use to us will be</span></div>
+<div style="position:absolute;left:76.58px;top:166.70px" class="cls_017"><span class="cls_017">Ultrasonic Distance Sensor - Entry End (14),</span><span class="cls_018"> this sensor will detect the location of person</span></div>
+<div style="position:absolute;left:76.58px;top:183.26px" class="cls_018"><span class="cls_018">in the vicinity of the entrance.</span></div>
+<div style="position:absolute;left:76.58px;top:199.82px" class="cls_023"><span class="cls_023">o</span></div>
+<div style="position:absolute;left:94.58px;top:199.82px" class="cls_018"><span class="cls_018">If no people is detected near the entrance, a default message is displayed on the </span><span class="cls_017">LCD</span></div>
+<div style="position:absolute;left:94.58px;top:216.26px" class="cls_017"><span class="cls_017">screen (17)</span><span class="cls_018"> for example </span><span class="cls_024">“</span><span class="cls_025">--- Welcome! ---</span><span class="cls_024">”</span><span class="cls_018">, and also displays the total number of</span></div>
+<div style="position:absolute;left:94.58px;top:232.82px" class="cls_018"><span class="cls_018">people currently inside - </span><span class="cls_024">“</span><span class="cls_025">People in: </span><span class="cls_026">count</span><span class="cls_024">”</span><span class="cls_018">.</span></div>
+<div style="position:absolute;left:76.58px;top:249.41px" class="cls_023"><span class="cls_023">o</span></div>
+<div style="position:absolute;left:94.58px;top:249.41px" class="cls_018"><span class="cls_018">If a person is detected in the vicinity of the entrance, two things might happen:</span></div>
+<div style="position:absolute;left:99.02px;top:265.97px" class="cls_022"><span class="cls_022"></span></div>
+<div style="position:absolute;left:117.02px;top:265.97px" class="cls_018"><span class="cls_018">If the </span><span class="cls_044">number of people inside is equal to the permissible limit</span><span class="cls_018"> (for example 20),</span></div>
+<div style="position:absolute;left:117.02px;top:282.41px" class="cls_018"><span class="cls_018">then on the LCD, we display a message like </span><span class="cls_024">“</span><span class="cls_025">No Space Inside</span><span class="cls_024">”</span></div>
+<div style="position:absolute;left:99.02px;top:315.53px" class="cls_022"><span class="cls_022"></span></div>
+<div style="position:absolute;left:117.02px;top:315.53px" class="cls_018"><span class="cls_018">If the </span><span class="cls_044">number of people inside is less than the permissible limit</span><span class="cls_018">, then we display the</span></div>
+<div style="position:absolute;left:117.02px;top:332.21px" class="cls_018"><span class="cls_018">message - </span><span class="cls_024">“</span><span class="cls_025">Kindly Sanitize</span><span class="cls_024">”</span><span class="cls_018"> on the LCD screen.</span></div>
+<div style="position:absolute;left:117.02px;top:358.73px" class="cls_017"><span class="cls_017">No further proceeding is done until the sanitization is complete</span><span class="cls_018">.</span></div>
+<div style="position:absolute;left:117.02px;top:385.13px" class="cls_018"><span class="cls_018">For the sanitization to be done, one has to take his/her/their hand near the sanitation</span></div>
+<div style="position:absolute;left:117.02px;top:401.57px" class="cls_018"><span class="cls_018">unit, where their hand is detected with the help of - </span><span class="cls_017">Ultrasonic Distance Sensor -</span></div>
+<div style="position:absolute;left:117.02px;top:418.15px" class="cls_017"><span class="cls_017">Sanitizer End (10)</span><span class="cls_018">. Once a hand is detected, a small amount of sanitizer is</span></div>
+<div style="position:absolute;left:117.02px;top:434.83px" class="cls_018"><span class="cls_018">dispensed out to the hands with the help of a </span><span class="cls_017">Positional Servo Motor (12)</span><span class="cls_018">.</span></div>
+<div style="position:absolute;left:117.02px;top:461.23px" class="cls_018"><span class="cls_018">Once sanitation is complete, only then temperature screening is done, with the help</span></div>
+<div style="position:absolute;left:117.02px;top:477.79px" class="cls_018"><span class="cls_018">of </span><span class="cls_017">Temperature Sensor [TMP36] (13)</span><span class="cls_018">. Temperature is displayed on the LCD as</span></div>
+<div style="position:absolute;left:117.02px;top:494.47px" class="cls_024"><span class="cls_024">“</span><span class="cls_025">Your Temp: </span><span class="cls_026">temp </span><span class="cls_025">F</span><span class="cls_024">”</span><span class="cls_018"> There are two possibilities following this.</span></div>
+<div style="position:absolute;left:121.58px;top:521.83px" class="cls_022"><span class="cls_022"></span><span class="cls_021"> </span><span class="cls_018">  If Temperature &lt; 99º F - Person doesn’t have fever, and should be allowed</span></div>
+<div style="position:absolute;left:139.58px;top:538.27px" class="cls_018"><span class="cls_018">entry. LCD displays: </span><span class="cls_024">“</span><span class="cls_025">You may enter :)</span><span class="cls_024">”</span><span class="cls_025">. </span><span class="cls_018">Green LED is turned on, and the</span></div>
+<div style="position:absolute;left:139.58px;top:554.83px" class="cls_018"><span class="cls_018">person may walk through. The count of the person inside is increased by 1.</span></div>
+<div style="position:absolute;left:121.58px;top:572.23px" class="cls_022"><span class="cls_022"></span><span class="cls_021"> </span><span class="cls_018">  If Temperature >= 99º F - Person has fever, and should not be allowed entry,</span></div>
+<div style="position:absolute;left:139.58px;top:588.82px" class="cls_018"><span class="cls_018">LCD displays </span><span class="cls_024">“</span><span class="cls_025">FEVER Step Aside</span><span class="cls_024">”</span><span class="cls_018">, the Red LED is turned on, and the Buzzer</span></div>
+<div style="position:absolute;left:139.58px;top:605.26px" class="cls_018"><span class="cls_018">goes on to alert the Gatekeeper, and also to make people nearby aware that they</span></div>
+<div style="position:absolute;left:139.58px;top:621.82px" class="cls_018"><span class="cls_018">should keep safe distance.</span></div>
+<div style="position:absolute;left:58.58px;top:639.34px" class="cls_022"><span class="cls_022"></span></div>
+<div style="position:absolute;left:76.58px;top:639.34px" class="cls_018"><span class="cls_018">The device also has a third </span><span class="cls_017">Ultrasonic Distance Sensor - Exit End (6), </span><span class="cls_018">when any person</span></div>
+<div style="position:absolute;left:76.58px;top:655.78px" class="cls_018"><span class="cls_018">approaches the exit gate, it reduces the count of the number of people currently in by</span></div>
+<div style="position:absolute;left:76.58px;top:672.34px" class="cls_018"><span class="cls_018">1(unless people in is 0)</span></div>
+<div style="position:absolute;left:58.58px;top:689.86px" class="cls_022"><span class="cls_022"></span></div>
+<div style="position:absolute;left:76.58px;top:689.86px" class="cls_018"><span class="cls_018">Flowchart is given on the following page, link for a better quality image of flowchart (</span><span class="cls_045">here</span><span class="cls_018">).</span></div>
+<div style="position:absolute;left:294.31px;top:728.50px" class="cls_002"><span class="cls_002">8</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:6416px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e10c4938-936a-11eb-8b25-0cc47a792c0a_id_e10c4938-936a-11eb-8b25-0cc47a792c0a_files/background09.jpg" width=612 height=792></div>
+<div style="position:absolute;left:186.05px;top:699.34px" class="cls_046"><span class="cls_046"> </span><A HREF="https://drive.google.com/file/d/1-LISMYGJhbntf_ng9hD6HRenMunhOr7F/view?usp=sharing">Figure 4: Flowchart of the procedure</A> </div>
+<div style="position:absolute;left:294.31px;top:728.50px" class="cls_002"><span class="cls_002">9</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:7218px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e10c4938-936a-11eb-8b25-0cc47a792c0a_id_e10c4938-936a-11eb-8b25-0cc47a792c0a_files/background10.jpg" width=612 height=792></div>
+<div style="position:absolute;left:54.00px;top:71.06px" class="cls_016"><span class="cls_016">2.6 Source Code:</span></div>
+<div style="position:absolute;left:54.00px;top:101.30px" class="cls_030"><span class="cls_030">#include &lt;LiquidCrystal.h></span></div>
+<div style="position:absolute;left:54.00px;top:114.86px" class="cls_030"><span class="cls_030">#include &lt;Servo.h></span></div>
+<div style="position:absolute;left:54.00px;top:128.54px" class="cls_030"><span class="cls_030">int cm=0,inchOut=0,s_distance=0; </span><span class="cls_031">//initializing distance variables</span></div>
+<div style="position:absolute;left:54.00px;top:155.66px" class="cls_030"><span class="cls_030">Servo myservo; </span><span class="cls_031">//object for servo</span></div>
+<div style="position:absolute;left:54.00px;top:169.34px" class="cls_030"><span class="cls_030">int pos = 0; </span><span class="cls_031">//stores the position of the servo</span></div>
+<div style="position:absolute;left:54.00px;top:182.90px" class="cls_031"><span class="cls_031">//method to read data of ultrasonic distance sensors</span></div>
+<div style="position:absolute;left:54.00px;top:196.46px" class="cls_030"><span class="cls_030">long readUltrasonicDistance(int triggerPin, int echoPin)</span></div>
+<div style="position:absolute;left:54.00px;top:210.02px" class="cls_030"><span class="cls_030">{</span></div>
+<div style="position:absolute;left:68.42px;top:223.70px" class="cls_030"><span class="cls_030">pinMode(triggerPin, OUTPUT);</span></div>
+<div style="position:absolute;left:284.45px;top:223.70px" class="cls_031"><span class="cls_031">// Clear the trigger</span></div>
+<div style="position:absolute;left:68.42px;top:237.26px" class="cls_030"><span class="cls_030">digitalWrite(triggerPin, LOW);</span></div>
+<div style="position:absolute;left:68.42px;top:250.85px" class="cls_030"><span class="cls_030">delayMicroseconds(2);</span></div>
+<div style="position:absolute;left:68.42px;top:264.53px" class="cls_031"><span class="cls_031">// Sets the trigger pin to HIGH state for 10 microseconds</span></div>
+<div style="position:absolute;left:68.42px;top:278.09px" class="cls_030"><span class="cls_030">digitalWrite(triggerPin, HIGH);</span></div>
+<div style="position:absolute;left:68.42px;top:291.65px" class="cls_030"><span class="cls_030">delayMicroseconds(10);</span></div>
+<div style="position:absolute;left:68.42px;top:305.21px" class="cls_030"><span class="cls_030">digitalWrite(triggerPin, LOW);</span></div>
+<div style="position:absolute;left:68.42px;top:318.89px" class="cls_030"><span class="cls_030">pinMode(echoPin, INPUT);</span></div>
+<div style="position:absolute;left:68.42px;top:332.45px" class="cls_031"><span class="cls_031">// Reads the echo pin, and returns the sound wave travel time in</span></div>
+<div style="position:absolute;left:54.00px;top:346.01px" class="cls_031"><span class="cls_031">microseconds</span></div>
+<div style="position:absolute;left:68.42px;top:359.57px" class="cls_030"><span class="cls_030">return pulseIn(echoPin, HIGH);</span></div>
+<div style="position:absolute;left:54.00px;top:373.25px" class="cls_030"><span class="cls_030">}</span></div>
+<div style="position:absolute;left:54.00px;top:386.81px" class="cls_030"><span class="cls_030">LiquidCrystal lcd(12, 11, 5, 4, 3, 2);</span></div>
+<div style="position:absolute;left:54.00px;top:400.37px" class="cls_031"><span class="cls_031">//set up function</span></div>
+<div style="position:absolute;left:54.00px;top:414.07px" class="cls_030"><span class="cls_030">void setup() {</span></div>
+<div style="position:absolute;left:68.42px;top:428.35px" class="cls_030"><span class="cls_030">lcd.begin(16, 2);</span></div>
+<div style="position:absolute;left:219.65px;top:428.35px" class="cls_031"><span class="cls_031">//</span><span class="cls_032">Initializing </span><span class="cls_033">LCD</span><span class="cls_032"> interface, and specifies the dimension</span></div>
+<div style="position:absolute;left:68.42px;top:442.03px" class="cls_030"><span class="cls_030">pinMode(10, OUTPUT); </span><span class="cls_031">//Digital signal for [TMP36], so that it</span></div>
+<div style="position:absolute;left:219.65px;top:455.59px" class="cls_031"><span class="cls_031">//isn’t on always</span></div>
+<div style="position:absolute;left:68.42px;top:469.15px" class="cls_030"><span class="cls_030">pinMode(13, OUTPUT); </span><span class="cls_031">//OUTPUT digital signal for Red LED</span></div>
+<div style="position:absolute;left:68.42px;top:482.83px" class="cls_030"><span class="cls_030">myservo.attach(8);</span></div>
+<div style="position:absolute;left:219.65px;top:482.83px" class="cls_031"><span class="cls_031">//attaching the servo with Digital pin 8</span></div>
+<div style="position:absolute;left:68.42px;top:496.39px" class="cls_030"><span class="cls_030">myservo.write(0);</span></div>
+<div style="position:absolute;left:219.65px;top:496.39px" class="cls_031"><span class="cls_031">//initially the servo is at 0 degree angle</span></div>
+<div style="position:absolute;left:68.42px;top:509.95px" class="cls_030"><span class="cls_030">pinMode(9, OUTPUT);</span></div>
+<div style="position:absolute;left:219.65px;top:509.95px" class="cls_031"><span class="cls_031">//OUTPUT digital signal for Green LED</span></div>
+<div style="position:absolute;left:68.42px;top:523.51px" class="cls_030"><span class="cls_030">pinMode(A0, INPUT);</span></div>
+<div style="position:absolute;left:219.65px;top:523.51px" class="cls_031"><span class="cls_031">//INPUT signal from [TMP36]</span></div>
+<div style="position:absolute;left:68.42px;top:537.19px" class="cls_030"><span class="cls_030">Serial.begin(9600);</span></div>
+<div style="position:absolute;left:219.65px;top:537.19px" class="cls_031"><span class="cls_031">//setting baud rate for serial data comm.</span></div>
+<div style="position:absolute;left:54.00px;top:550.75px" class="cls_030"><span class="cls_030">}</span></div>
+<div style="position:absolute;left:54.00px;top:564.31px" class="cls_030"><span class="cls_030">int count=0,flag=0,sanitise=0;</span></div>
+<div style="position:absolute;left:54.00px;top:578.02px" class="cls_031"><span class="cls_031">//loop function</span></div>
+<div style="position:absolute;left:54.00px;top:591.58px" class="cls_030"><span class="cls_030">void loop() {</span></div>
+<div style="position:absolute;left:68.42px;top:605.14px" class="cls_030"><span class="cls_030">digitalWrite(9, LOW); </span><span class="cls_031">//green led dimmed</span></div>
+<div style="position:absolute;left:68.42px;top:618.70px" class="cls_030"><span class="cls_030">digitalWrite(13, LOW); </span><span class="cls_031">//red led dimmed</span></div>
+<div style="position:absolute;left:68.42px;top:632.38px" class="cls_030"><span class="cls_030">cm = 0.01723 * readUltrasonicDistance(7, 7); </span><span class="cls_031">//distance of a</span></div>
+<div style="position:absolute;left:54.00px;top:645.94px" class="cls_031"><span class="cls_031">person from entry gate</span></div>
+<div style="position:absolute;left:68.42px;top:659.50px" class="cls_030"><span class="cls_030">s_distance = 0.01723 * readUltrasonicDistance(A5, A5); </span><span class="cls_031">//distance</span></div>
+<div style="position:absolute;left:54.00px;top:673.18px" class="cls_031"><span class="cls_031">of hand from sanitiser machine</span></div>
+<div style="position:absolute;left:68.42px;top:686.74px" class="cls_030"><span class="cls_030">inchOut = 0.01723 * readUltrasonicDistance(A1, A2)/2.54;</span></div>
+<div style="position:absolute;left:54.00px;top:700.30px" class="cls_031"><span class="cls_031">//distance of a person from exit gate</span></div>
+<div style="position:absolute;left:291.43px;top:728.50px" class="cls_002"><span class="cls_002">10</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:8020px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e10c4938-936a-11eb-8b25-0cc47a792c0a_id_e10c4938-936a-11eb-8b25-0cc47a792c0a_files/background11.jpg" width=612 height=792></div>
+<div style="position:absolute;left:68.42px;top:69.96px" class="cls_030"><span class="cls_030">lcd.setCursor(0,0);</span></div>
+<div style="position:absolute;left:68.42px;top:83.54px" class="cls_031"><span class="cls_031">//default print when no one is near</span></div>
+<div style="position:absolute;left:68.42px;top:97.22px" class="cls_030"><span class="cls_030">if(cm>15){</span></div>
+<div style="position:absolute;left:82.82px;top:110.78px" class="cls_030"><span class="cls_030">lcd.print(" ---Welcome!--- "); </span><span class="cls_031">//Welcome message</span></div>
+<div style="position:absolute;left:82.82px;top:124.34px" class="cls_030"><span class="cls_030">delay(2000);</span></div>
+<div style="position:absolute;left:82.82px;top:137.90px" class="cls_030"><span class="cls_030">lcd.setCursor(0,0);</span></div>
+<div style="position:absolute;left:82.82px;top:151.58px" class="cls_030"><span class="cls_030">lcd.print("No Mask No Entry"); </span><span class="cls_031">//Masks must for entry</span></div>
+<div style="position:absolute;left:82.82px;top:165.14px" class="cls_030"><span class="cls_030">flag=0;</span></div>
+<div style="position:absolute;left:68.42px;top:178.70px" class="cls_030"><span class="cls_030">}</span></div>
+<div style="position:absolute;left:54.00px;top:205.94px" class="cls_031"><span class="cls_031">//When there is more than 20 people inside, print "No Space</span></div>
+<div style="position:absolute;left:54.00px;top:219.50px" class="cls_031"><span class="cls_031">//Inside" and do not allow anyone in to maintain social distancing</span></div>
+<div style="position:absolute;left:61.22px;top:233.06px" class="cls_030"><span class="cls_030">if(count>=20 && cm&lt;=15){</span></div>
+<div style="position:absolute;left:82.82px;top:246.77px" class="cls_030"><span class="cls_030">Serial.print("NO SPACE INSIDE");</span></div>
+<div style="position:absolute;left:82.82px;top:260.33px" class="cls_030"><span class="cls_030">lcd.print("No Space Inside "); </span><span class="cls_031">//Print “No Space Inside”</span></div>
+<div style="position:absolute;left:90.02px;top:273.89px" class="cls_030"><span class="cls_030">flag=0;</span></div>
+<div style="position:absolute;left:68.42px;top:287.57px" class="cls_030"><span class="cls_030">}</span></div>
+<div style="position:absolute;left:54.00px;top:301.13px" class="cls_031"><span class="cls_031">//The person must sanitize before proceeding any further once he</span></div>
+<div style="position:absolute;left:54.00px;top:314.69px" class="cls_031"><span class="cls_031">//is detected</span></div>
+<div style="position:absolute;left:68.42px;top:328.25px" class="cls_030"><span class="cls_030">if(cm&lt;=15 && count &lt; 20 && sanitise==0){</span></div>
+<div style="position:absolute;left:90.02px;top:341.93px" class="cls_030"><span class="cls_030">Serial.print("Person Detected |");</span><span class="cls_031">//Printing in Serial Monitor</span></div>
+<div style="position:absolute;left:90.02px;top:355.49px" class="cls_030"><span class="cls_030">lcd.setCursor(0,0);</span></div>
+<div style="position:absolute;left:90.02px;top:369.05px" class="cls_030"><span class="cls_030">lcd.print("Kindly Sanitize</span></div>
+<div style="position:absolute;left:298.82px;top:369.05px" class="cls_030"><span class="cls_030">"); </span><span class="cls_031">//Instruction to sanitise</span></div>
+<div style="position:absolute;left:90.02px;top:382.61px" class="cls_031"><span class="cls_031">//sanitize once the hand is &lt;=10cm from the sanitiser</span></div>
+<div style="position:absolute;left:90.02px;top:396.29px" class="cls_031"><span class="cls_031">//Moving servo to  complete sanitation</span></div>
+<div style="position:absolute;left:90.02px;top:409.87px" class="cls_030"><span class="cls_030">if(s_distance&lt;=10){</span></div>
+<div style="position:absolute;left:162.02px;top:423.43px" class="cls_030"><span class="cls_030">myservo.write(45);</span></div>
+<div style="position:absolute;left:162.02px;top:437.11px" class="cls_030"><span class="cls_030">delay(100);</span></div>
+<div style="position:absolute;left:162.02px;top:450.67px" class="cls_030"><span class="cls_030">myservo.write(90);</span></div>
+<div style="position:absolute;left:162.02px;top:464.23px" class="cls_030"><span class="cls_030">delay(100);</span></div>
+<div style="position:absolute;left:162.02px;top:477.79px" class="cls_030"><span class="cls_030">myservo.write(135);</span></div>
+<div style="position:absolute;left:162.02px;top:491.47px" class="cls_030"><span class="cls_030">delay(100);</span></div>
+<div style="position:absolute;left:162.02px;top:505.03px" class="cls_030"><span class="cls_030">myservo.write(180);</span></div>
+<div style="position:absolute;left:162.02px;top:518.59px" class="cls_030"><span class="cls_030">delay(100);</span></div>
+<div style="position:absolute;left:162.02px;top:532.27px" class="cls_030"><span class="cls_030">myservo.write(0);</span></div>
+<div style="position:absolute;left:162.02px;top:545.83px" class="cls_030"><span class="cls_030">delay(2000);</span></div>
+<div style="position:absolute;left:162.02px;top:559.39px" class="cls_030"><span class="cls_030">sanitise=1;</span></div>
+<div style="position:absolute;left:277.25px;top:559.39px" class="cls_031"><span class="cls_031">//Sanitation status set to 1(done)</span></div>
+<div style="position:absolute;left:111.62px;top:572.95px" class="cls_030"><span class="cls_030">}</span></div>
+<div style="position:absolute;left:90.02px;top:586.66px" class="cls_030"><span class="cls_030">Serial.print("Sanitised :"); </span><span class="cls_031">//Printing sanitation status</span></div>
+<div style="position:absolute;left:90.02px;top:600.22px" class="cls_030"><span class="cls_030">Serial.print(sanitise);</span></div>
+<div style="position:absolute;left:298.87px;top:600.22px" class="cls_031"><span class="cls_031">//On serial monitor</span></div>
+<div style="position:absolute;left:68.42px;top:613.78px" class="cls_030"><span class="cls_030">}</span></div>
+<div style="position:absolute;left:68.42px;top:641.02px" class="cls_031"><span class="cls_031">//Measure Temperature once sanitised</span></div>
+<div style="position:absolute;left:68.42px;top:654.58px" class="cls_030"><span class="cls_030">if(cm&lt;=15 && count &lt; 20 && sanitise==1){</span></div>
+<div style="position:absolute;left:82.82px;top:668.14px" class="cls_030"><span class="cls_030">count++;</span></div>
+<div style="position:absolute;left:82.82px;top:681.82px" class="cls_030"><span class="cls_030">if(flag==0){</span></div>
+<div style="position:absolute;left:126.02px;top:695.38px" class="cls_030"><span class="cls_030">digitalWrite(9, LOW);</span></div>
+<div style="position:absolute;left:291.43px;top:728.50px" class="cls_002"><span class="cls_002">11</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:8822px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e10c4938-936a-11eb-8b25-0cc47a792c0a_id_e10c4938-936a-11eb-8b25-0cc47a792c0a_files/background12.jpg" width=612 height=792></div>
+<div style="position:absolute;left:126.02px;top:69.96px" class="cls_030"><span class="cls_030">digitalWrite(13, LOW);</span></div>
+<div style="position:absolute;left:126.02px;top:83.54px" class="cls_030"><span class="cls_030">lcd.setCursor(0,0);</span></div>
+<div style="position:absolute;left:126.02px;top:97.22px" class="cls_030"><span class="cls_030">lcd.print("Covid Screening</span></div>
+<div style="position:absolute;left:334.82px;top:97.22px" class="cls_030"><span class="cls_030">"); </span><span class="cls_031">//Screening Begins</span></div>
+<div style="position:absolute;left:126.02px;top:110.78px" class="cls_030"><span class="cls_030">delay(800);</span></div>
+<div style="position:absolute;left:126.02px;top:124.34px" class="cls_030"><span class="cls_030">lcd.setCursor(0,0);</span></div>
+<div style="position:absolute;left:126.02px;top:137.90px" class="cls_030"><span class="cls_030">lcd.print("Cooperate Pls  "); </span><span class="cls_031">//Requesting Coorperation</span></div>
+<div style="position:absolute;left:126.02px;top:151.58px" class="cls_030"><span class="cls_030">delay(800);</span></div>
+<div style="position:absolute;left:126.02px;top:165.14px" class="cls_030"><span class="cls_030">lcd.setCursor(0,0);</span></div>
+<div style="position:absolute;left:126.02px;top:178.70px" class="cls_030"><span class="cls_030">lcd.print("Checking Temp.</span></div>
+<div style="position:absolute;left:327.62px;top:178.70px" class="cls_030"><span class="cls_030">");</span></div>
+<div style="position:absolute;left:126.02px;top:192.38px" class="cls_030"><span class="cls_030">delay(2500);</span></div>
+<div style="position:absolute;left:82.82px;top:205.94px" class="cls_030"><span class="cls_030">}</span></div>
+<div style="position:absolute;left:82.82px;top:219.50px" class="cls_031"><span class="cls_031">//Temperature checking begins</span></div>
+<div style="position:absolute;left:82.82px;top:233.06px" class="cls_030"><span class="cls_030">flag=1;</span></div>
+<div style="position:absolute;left:82.82px;top:246.77px" class="cls_030"><span class="cls_030">digitalWrite(10, HIGH</span><span class="cls_031">);//digital pin high only after sanitation</span></div>
+<div style="position:absolute;left:82.82px;top:260.33px" class="cls_031"><span class="cls_031">//temperature is not measured always</span></div>
+<div style="position:absolute;left:82.82px;top:273.89px" class="cls_030"><span class="cls_030">int reading = analogRead(A0);</span></div>
+<div style="position:absolute;left:82.82px;top:287.57px" class="cls_030"><span class="cls_030">float voltage = (reading/ 1024.0) * 5000.0;</span></div>
+<div style="position:absolute;left:82.82px;top:301.13px" class="cls_030"><span class="cls_030">float temp = (voltage) / 10 ;</span></div>
+<div style="position:absolute;left:82.82px;top:314.69px" class="cls_030"><span class="cls_030">temp =temp+ (-50);</span></div>
+<div style="position:absolute;left:82.82px;top:328.25px" class="cls_030"><span class="cls_030">temp=1.8*temp+32; </span><span class="cls_031">//Interpreting temperature in Fahrenheit</span></div>
+<div style="position:absolute;left:82.82px;top:341.93px" class="cls_031"><span class="cls_031">//if Temperature High, dont allow entry</span></div>
+<div style="position:absolute;left:82.82px;top:355.49px" class="cls_030"><span class="cls_030">if(temp>=99)</span></div>
+<div style="position:absolute;left:82.82px;top:369.05px" class="cls_030"><span class="cls_030">{</span></div>
+<div style="position:absolute;left:126.02px;top:382.61px" class="cls_030"><span class="cls_030">digitalWrite(13, HIGH); </span><span class="cls_031">//red led on as temperature high</span></div>
+<div style="position:absolute;left:126.02px;top:396.29px" class="cls_030"><span class="cls_030">lcd.setCursor(0,0);</span></div>
+<div style="position:absolute;left:126.02px;top:409.87px" class="cls_030"><span class="cls_030">lcd.print("Your Temp:"); </span><span class="cls_031">//Showing Temperature</span></div>
+<div style="position:absolute;left:126.02px;top:423.43px" class="cls_030"><span class="cls_030">lcd.print(temp);</span></div>
+<div style="position:absolute;left:126.02px;top:437.11px" class="cls_030"><span class="cls_030">lcd.print("F</span></div>
+<div style="position:absolute;left:241.22px;top:437.11px" class="cls_030"><span class="cls_030">");</span></div>
+<div style="position:absolute;left:126.02px;top:450.67px" class="cls_030"><span class="cls_030">count--;</span></div>
+<div style="position:absolute;left:126.02px;top:464.23px" class="cls_030"><span class="cls_030">delay(2000);</span></div>
+<div style="position:absolute;left:126.02px;top:477.79px" class="cls_030"><span class="cls_030">lcd.setCursor(0,0);</span></div>
+<div style="position:absolute;left:126.02px;top:491.47px" class="cls_030"><span class="cls_030">Serial.print("| High Temp!!! :"); </span><span class="cls_031">//Serial printing info</span></div>
+<div style="position:absolute;left:126.02px;top:505.03px" class="cls_030"><span class="cls_030">Serial.print(temp);</span></div>
+<div style="position:absolute;left:126.02px;top:518.59px" class="cls_030"><span class="cls_030">lcd.print("FEVER Step Aside"); </span><span class="cls_031">//instruct to step aside</span></div>
+<div style="position:absolute;left:126.02px;top:545.83px" class="cls_031"><span class="cls_031">//Play alarm to make people around aware and maintain</span></div>
+<div style="position:absolute;left:54.00px;top:559.39px" class="cls_031"><span class="cls_031">distance</span></div>
+<div style="position:absolute;left:126.02px;top:572.95px" class="cls_030"><span class="cls_030">for(int i=0;i&lt;10;i++){</span></div>
+<div style="position:absolute;left:162.02px;top:586.66px" class="cls_030"><span class="cls_030">tone(6, 450, 100);</span></div>
+<div style="position:absolute;left:162.02px;top:600.22px" class="cls_030"><span class="cls_030">delay(250);</span></div>
+<div style="position:absolute;left:162.02px;top:613.78px" class="cls_030"><span class="cls_030">tone(6, 650, 100);</span></div>
+<div style="position:absolute;left:162.02px;top:627.46px" class="cls_030"><span class="cls_030">delay(250);</span></div>
+<div style="position:absolute;left:111.62px;top:641.02px" class="cls_030"><span class="cls_030">}</span></div>
+<div style="position:absolute;left:126.02px;top:654.58px" class="cls_030"><span class="cls_030">delay(1500);</span></div>
+<div style="position:absolute;left:126.02px;top:668.14px" class="cls_030"><span class="cls_030">digitalWrite(13, LOW);</span></div>
+<div style="position:absolute;left:126.02px;top:681.82px" class="cls_030"><span class="cls_030">flag=0;</span></div>
+<div style="position:absolute;left:82.82px;top:695.38px" class="cls_030"><span class="cls_030">}</span></div>
+<div style="position:absolute;left:291.43px;top:728.50px" class="cls_002"><span class="cls_002">12</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:9624px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e10c4938-936a-11eb-8b25-0cc47a792c0a_id_e10c4938-936a-11eb-8b25-0cc47a792c0a_files/background13.jpg" width=612 height=792></div>
+<div style="position:absolute;left:82.82px;top:83.54px" class="cls_031"><span class="cls_031">//if temperature normal, allow entry</span></div>
+<div style="position:absolute;left:82.82px;top:97.22px" class="cls_030"><span class="cls_030">else{</span></div>
+<div style="position:absolute;left:126.02px;top:110.78px" class="cls_030"><span class="cls_030">digitalWrite(9, HIGH); </span><span class="cls_031">//green led turned on</span></div>
+<div style="position:absolute;left:126.02px;top:124.34px" class="cls_030"><span class="cls_030">lcd.setCursor(0,0);</span></div>
+<div style="position:absolute;left:126.02px;top:137.90px" class="cls_030"><span class="cls_030">lcd.print("Your Temp:"); </span><span class="cls_031">//showing temperature</span></div>
+<div style="position:absolute;left:126.02px;top:151.58px" class="cls_030"><span class="cls_030">lcd.print(temp);</span></div>
+<div style="position:absolute;left:126.02px;top:165.14px" class="cls_030"><span class="cls_030">lcd.print("F</span></div>
+<div style="position:absolute;left:241.22px;top:165.14px" class="cls_030"><span class="cls_030">");</span></div>
+<div style="position:absolute;left:126.02px;top:178.70px" class="cls_030"><span class="cls_030">Serial.print("| Normal Temp :"); </span><span class="cls_031">//Serial printing info</span></div>
+<div style="position:absolute;left:126.02px;top:192.38px" class="cls_030"><span class="cls_030">Serial.print(temp);</span></div>
+<div style="position:absolute;left:126.02px;top:205.94px" class="cls_030"><span class="cls_030">delay(2000);</span></div>
+<div style="position:absolute;left:126.02px;top:219.50px" class="cls_030"><span class="cls_030">lcd.setCursor(0,0);</span></div>
+<div style="position:absolute;left:126.02px;top:233.06px" class="cls_030"><span class="cls_030">lcd.print("You may enter :)"); /</span><span class="cls_031">/Temp normal, person may</span></div>
+<div style="position:absolute;left:54.00px;top:246.77px" class="cls_031"><span class="cls_031">enter</span></div>
+<div style="position:absolute;left:126.02px;top:260.33px" class="cls_030"><span class="cls_030">delay(1500);</span></div>
+<div style="position:absolute;left:126.02px;top:273.89px" class="cls_030"><span class="cls_030">digitalWrite(9, LOW);</span></div>
+<div style="position:absolute;left:126.02px;top:287.57px" class="cls_030"><span class="cls_030">flag=0;</span></div>
+<div style="position:absolute;left:82.82px;top:301.13px" class="cls_030"><span class="cls_030">}</span></div>
+<div style="position:absolute;left:68.42px;top:314.69px" class="cls_030"><span class="cls_030">}</span></div>
+<div style="position:absolute;left:68.42px;top:328.25px" class="cls_030"><span class="cls_030">delay(2000);</span><span class="cls_031">//2 second gap after a person has entered (Social</span></div>
+<div style="position:absolute;left:54.00px;top:341.93px" class="cls_031"><span class="cls_031">distancing)</span></div>
+<div style="position:absolute;left:68.42px;top:355.49px" class="cls_030"><span class="cls_030">digitalWrite(9, LOW);</span></div>
+<div style="position:absolute;left:68.42px;top:369.05px" class="cls_030"><span class="cls_030">digitalWrite(13, LOW);</span></div>
+<div style="position:absolute;left:68.42px;top:382.61px" class="cls_031"><span class="cls_031">//if person approaches exit gate, decrease count of people in</span></div>
+<div style="position:absolute;left:68.42px;top:396.29px" class="cls_030"><span class="cls_030">if(inchOut&lt;=6){</span></div>
+<div style="position:absolute;left:82.82px;top:409.87px" class="cls_030"><span class="cls_030">if(count!=0){</span></div>
+<div style="position:absolute;left:90.02px;top:423.43px" class="cls_030"><span class="cls_030">count--; </span><span class="cls_031">//decreasing count of people in by 1 as they exit</span></div>
+<div style="position:absolute;left:90.02px;top:437.11px" class="cls_030"><span class="cls_030">delay(2000);</span></div>
+<div style="position:absolute;left:82.82px;top:450.67px" class="cls_030"><span class="cls_030">}</span></div>
+<div style="position:absolute;left:68.42px;top:464.23px" class="cls_030"><span class="cls_030">}</span></div>
+<div style="position:absolute;left:68.42px;top:491.47px" class="cls_031"><span class="cls_031">//Display the number of people currently in</span></div>
+<div style="position:absolute;left:68.42px;top:505.03px" class="cls_030"><span class="cls_030">Serial.print("| count in :"); </span><span class="cls_031">//serial printing count of ppl in</span></div>
+<div style="position:absolute;left:68.42px;top:518.59px" class="cls_030"><span class="cls_030">Serial.println(count);</span></div>
+<div style="position:absolute;left:68.42px;top:532.27px" class="cls_030"><span class="cls_030">sanitise=0;</span></div>
+<div style="position:absolute;left:68.42px;top:545.83px" class="cls_030"><span class="cls_030">lcd.setCursor(0, 1);</span></div>
+<div style="position:absolute;left:68.42px;top:559.39px" class="cls_030"><span class="cls_030">lcd.print("People in: "); </span><span class="cls_031">//Display count of ppl in on LCD</span></div>
+<div style="position:absolute;left:68.42px;top:572.95px" class="cls_030"><span class="cls_030">lcd.print(count);</span></div>
+<div style="position:absolute;left:54.00px;top:586.66px" class="cls_030"><span class="cls_030">}</span></div>
+<div style="position:absolute;left:291.43px;top:728.50px" class="cls_002"><span class="cls_002">13</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:10426px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e10c4938-936a-11eb-8b25-0cc47a792c0a_id_e10c4938-936a-11eb-8b25-0cc47a792c0a_files/background14.jpg" width=612 height=792></div>
+<div style="position:absolute;left:54.00px;top:71.18px" class="cls_016"><span class="cls_016">2.7 Innovative points about the Project: -</span></div>
+<div style="position:absolute;left:72.02px;top:90.62px" class="cls_035"><span class="cls_035"></span><span class="cls_036"> </span><span class="cls_015"> The count of the number of people in the shop/restaurant/mall is made dynamic with</span></div>
+<div style="position:absolute;left:90.02px;top:107.78px" class="cls_015"><span class="cls_015">the addition of just an additional Ultrasonic Distance Sensor at the Exit end, where the</span></div>
+<div style="position:absolute;left:90.02px;top:125.06px" class="cls_015"><span class="cls_015">number of people exiting the shop is reduced from the number of people currently</span></div>
+<div style="position:absolute;left:90.02px;top:142.22px" class="cls_015"><span class="cls_015">present inside the shop.</span></div>
+<div style="position:absolute;left:72.02px;top:160.34px" class="cls_035"><span class="cls_035"></span><span class="cls_036"> </span><span class="cls_015"> The entrance in the shop is stopped once the number of people inside the shop</span></div>
+<div style="position:absolute;left:90.02px;top:177.50px" class="cls_015"><span class="cls_015">exceeds the permitted limit, which is a necessity for social distancing. Once people</span></div>
+<div style="position:absolute;left:90.02px;top:194.66px" class="cls_015"><span class="cls_015">exit and the count is reduced, people can enter, otherwise they have to wait.</span></div>
+<div style="position:absolute;left:72.02px;top:212.90px" class="cls_035"><span class="cls_035"></span><span class="cls_036"> </span><span class="cls_015"> Appropriate cool down time is given to the machine after every screening process, so</span></div>
+<div style="position:absolute;left:90.02px;top:230.06px" class="cls_015"><span class="cls_015">that distancing is maintained in queue, because there would be no point whatsoever in</span></div>
+<div style="position:absolute;left:90.02px;top:247.25px" class="cls_015"><span class="cls_015">standing close to one another, as people won’t be able to use the machine before that</span></div>
+<div style="position:absolute;left:90.02px;top:264.41px" class="cls_015"><span class="cls_015">cool down time.</span></div>
+<div style="position:absolute;left:72.02px;top:282.53px" class="cls_035"><span class="cls_035"></span><span class="cls_036"> </span><span class="cls_015"> Sanitization is made compulsory for anyone before any further stages of screening.</span></div>
+<div style="position:absolute;left:72.02px;top:300.77px" class="cls_035"><span class="cls_035"></span><span class="cls_036"> </span><span class="cls_015"> Relaying cautionary message to wear mask. “No Mask No Entry”</span></div>
+<div style="position:absolute;left:54.00px;top:342.17px" class="cls_016"><span class="cls_016">2.8 Links:</span></div>
+<div style="position:absolute;left:54.00px;top:360.89px" class="cls_008"><span class="cls_008">Simulation Video Link:</span></div>
+<div style="position:absolute;left:56.52px;top:379.73px" class="cls_047"><span class="cls_047"> </span><A HREF="https://youtu.be/NpoYPOcdVQc">https://youtu.be/NpoYPOcdVQc</A> </div>
+<div style="position:absolute;left:54.00px;top:408.07px" class="cls_008"><span class="cls_008">TinkerCAD Project Link:  </span><A HREF="https://www.tinkercad.com/things/3I1yRh8UKWp">https://www.tinkercad.com/things/3I1yRh8UKWp</A> </span></div>
+<div style="position:absolute;left:54.00px;top:450.79px" class="cls_016"><span class="cls_016">2.9 Scope of Improvement:</span></div>
+<div style="position:absolute;left:72.02px;top:471.31px" class="cls_039"><span class="cls_039"></span></div>
+<div style="position:absolute;left:90.02px;top:469.39px" class="cls_015"><span class="cls_015">[TMP36], the only temperature sensor available in TinkerCAD measures the</span></div>
+<div style="position:absolute;left:90.02px;top:486.55px" class="cls_015"><span class="cls_015">temperature of the ambient, so it will not be an accurate/appropriate sensor to use for</span></div>
+<div style="position:absolute;left:90.02px;top:503.71px" class="cls_015"><span class="cls_015">measuring body temperatures.</span></div>
+<div style="position:absolute;left:72.02px;top:520.87px" class="cls_039"><span class="cls_039"></span><span class="cls_040"> </span><span class="cls_015">  Door locking mechanism could be incorporated with the arduino for increased</span></div>
+<div style="position:absolute;left:90.02px;top:538.15px" class="cls_015"><span class="cls_015">functionality.</span></div>
+<div style="position:absolute;left:72.02px;top:555.31px" class="cls_039"><span class="cls_039"></span><span class="cls_040"> </span><span class="cls_015">  With the help of a camera, and a bit of Machine Learning application, a mask</span></div>
+<div style="position:absolute;left:90.02px;top:572.47px" class="cls_015"><span class="cls_015">detection algorithm night be set up to stop entry of anyone without a mask</span></div>
+<div style="position:absolute;left:72.02px;top:589.66px" class="cls_039"><span class="cls_039"></span><span class="cls_040"> </span><span class="cls_015">  IR sensor / PIR sensor maybe used instead of Ultrasonic distance sensor at the</span></div>
+<div style="position:absolute;left:90.02px;top:606.94px" class="cls_015"><span class="cls_015">sanitation unit</span></div>
+<div style="position:absolute;left:54.00px;top:686.14px" class="cls_041"><span class="cls_041">*This project was made as the final project for a 7 day online program on Arduino IDE organized by Ministry of Biotechnology Govt. of India in</span></div>
+<div style="position:absolute;left:54.00px;top:696.70px" class="cls_041"><span class="cls_041">association with Deen Dayal Upadhyaya College, University of Delhi</span></div>
+<div style="position:absolute;left:291.43px;top:728.50px" class="cls_002"><span class="cls_002">14</span></div>
+</div>
+
+</body>
+</html>
